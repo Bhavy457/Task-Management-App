@@ -1,5 +1,6 @@
-const Task = require("../model/taskModel");
+const Task = require("../models/taskModel");
 
+// Create a Task
 const createTask = async (req, res) => {
   try {
     const task = await Task.create(req.body);
@@ -9,6 +10,7 @@ const createTask = async (req, res) => {
   }
 };
 
+// Get all Tasks
 const getTasks = async (req, res) => {
   try {
     const tasks = await Task.find();
@@ -18,12 +20,13 @@ const getTasks = async (req, res) => {
   }
 };
 
+// Get a single Task
 const getTask = async (req, res) => {
   try {
     const { id } = req.params;
     const task = await Task.findById(id);
     if (!task) {
-      return res.status(404).json({ msg: "Task not found" });
+      return res.status(404).json(`NO task with id: ${id}`);
     }
     res.status(200).json(task);
   } catch (error) {
@@ -31,32 +34,33 @@ const getTask = async (req, res) => {
   }
 };
 
+// Delete Task
 const deleteTask = async (req, res) => {
   try {
     const { id } = req.params;
     const task = await Task.findByIdAndDelete(id);
     if (!task) {
-      return res.status(404).json({ msg: "Task not found" });
+      return res.status(404).json(`NO task with id: ${id}`);
     }
-    res.status(200).send("Task Deleted");
+
+    res.status(200).send("Task deleted");
   } catch (error) {
     res.status(500).json({ msg: error.message });
   }
 };
 
+// Update a Task
 const updateTask = async (req, res) => {
   try {
     const { id } = req.params;
-    const task = await Task.findByIdAndUpdate(
-      {
-        _id: id,
-      },
-      req.body,
-      { new: true, runValidators: true }
-    );
+    const task = await Task.findByIdAndUpdate({ _id: id }, req.body, {
+      new: true,
+      runValidators: true,
+    });
     if (!task) {
-      return res.status(404).json({ msg: "Task not found" });
+      return res.status(404).json(`NO task with id: ${id}`);
     }
+
     res.status(200).json(task);
   } catch (error) {
     res.status(500).json({ msg: error.message });
