@@ -11,7 +11,7 @@ const app = express();
 
 //Middleware
 app.use(express.json());
-app.use(taskRoutes);
+app.use("/api/tasks", taskRoutes);
 
 //Routes
 app.get("/", (req, res) => {
