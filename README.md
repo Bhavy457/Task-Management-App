@@ -10,7 +10,7 @@ This project is a **Task Management Web Application** developed to create, view,
 ---
 
 ## Key Features
-- **Responsive Frontend**: Developed with a modern frontend framework (React/Vue/Angular) for a smooth user experience on different screen sizes.
+- **Responsive Frontend**: Developed with a modern frontend framework (React) for a smooth user experience on different screen sizes.
 - **Backend API**: RESTful API to manage tasks, integrated with MongoDB for persistent storage.
 - **Error Handling**: Comprehensive error handling for invalid data inputs, incorrect routes, and server errors.
 - **Deployment**: Deployed to Render for easy access.
