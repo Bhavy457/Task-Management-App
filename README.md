@@ -125,6 +125,3 @@ This project is a **Task Management Web Application** developed to create, view,
 
 The application is deployed on Render with a live link available at [https://mern-task-app-2u6j.onrender.com/](https://mern-task-app-2u6j.onrender.com/). The backend and frontend are hosted to provide a seamless user experience.
 
----
-
-This documentation outlines the essential aspects of the Task Management Web Application, ensuring ease of setup, understanding of functionality, and guidance for future updates and testing.
