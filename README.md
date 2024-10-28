@@ -87,15 +87,19 @@ This project is a **Task Management Web Application** developed to create, view,
    npm install
    ```
 
-3. **Configure Environment Variables**:
+3. **Configure Environment Variables in Backend**:
    - Create a `.env` file in the root directory with MongoDB connection URI, e.g., `MONGO_URI=<your_mongodb_connection_string>`.
 
-4. **Run the Application**:
+4. **Configure Environment Variables in Frontend**:
+   - Create a `.env` file in the frontend folder with React connection URL, e.g., 'REACT_APP_SERVER_URL=http://localhost:5000'.
+
+5. **Run the Application**:
    ```bash
    npm run both
    ```
    The backend server will start on `http://localhost:5000`.
    The frontend server will start on `http://localhost:3000`
+
 
 ---
 
