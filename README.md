@@ -13,7 +13,6 @@ This project is a **Task Management Web Application** developed to create, view,
 - **Responsive Frontend**: Developed with a modern frontend framework (React/Vue/Angular) for a smooth user experience on different screen sizes.
 - **Backend API**: RESTful API to manage tasks, integrated with MongoDB for persistent storage.
 - **Error Handling**: Comprehensive error handling for invalid data inputs, incorrect routes, and server errors.
-- **Authentication (Bonus)**: Optional user authentication for task operations.
 - **Deployment**: Deployed to Render for easy access.
 
 ---
@@ -93,19 +92,16 @@ This project is a **Task Management Web Application** developed to create, view,
 
 4. **Run the Application**:
    ```bash
-   npm start
+   npm run both
    ```
    The backend server will start on `http://localhost:5000`.
-
-5. **Run Frontend**: Follow instructions in the frontend folder to start the UI and connect it to the backend API.
+   The frontend server will start on `http://localhost:3000`
 
 ---
 
 ## Authentication (In-Process)
 - User registration
 - User login/logout
-- Protected routes for task creation, updating, and deletion
-
 ---
 
 ## Frontend Views
