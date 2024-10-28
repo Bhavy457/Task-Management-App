@@ -4,10 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "backend": "nodemon backend/server.js",
+    "start": "node Backend/server.js",
+    "backend": "nodemon Backend/server.js",
     "frontend": "npm start --prefix frontend",
-    "both": "concurrently \"npm run backend\" \"npm run frontend\""
+    "both": "concurrently \"npm run Backend\" \"npm run frontend\""
   },
   "keywords": [],
   "author": "",
